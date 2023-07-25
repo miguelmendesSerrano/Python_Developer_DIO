@@ -8,7 +8,7 @@ from sqlalchemy import ForeignKey
 
 engine = create_engine("sqlite:///:memory")
 
-metadata_obj = MetaData(schema="teste")
+metadata_obj = MetaData()
 user = Table(
     "user",
     metadata_obj,
@@ -33,7 +33,8 @@ print(user_prefs.constraints)
 for table in metadata_obj.sorted_tables:
     print(table)
 
-metadata_bd_obj = MetaData(schema="bank")
+
+metadata_bd_obj = MetaData()
 financial_info = Table(
     "financial_info",
     metadata_bd_obj,
