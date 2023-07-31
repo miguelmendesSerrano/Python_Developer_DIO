@@ -1,0 +1,4 @@
+www.google.com.br
+8.8.8.8
+www.github.com
+4.4.4.4
